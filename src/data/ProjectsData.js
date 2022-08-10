@@ -1,12 +1,12 @@
 export const Project = [
     {
         id:1,
-        name:"Memory Game",
-        description:"It is a simple card flipping matching game that has a timer and counts the user's moves.",
-        tags:["Html","Css","JavaScript"],
-        
-        demo:"https://soumali28.github.io/Memory-Game/",
-        github:"https://github.com/soumali28/Memory-Game"
+        name:"Task-Manager",
+        description:"This is a todo app used for tracking all your tasks.",
+        tags:["MongoDb","ReactJS","NodeJs", "TailwindCSS"],
+        img: "https://i.ibb.co/B34XQyN/React-App-Google-Chrome-24-07-2022-17-54-41.png",
+        demo:"https://sou-task-manager.netlify.app/",
+        github:"https://github.com/soumali28/Task-Manager"
     },
     {
         id:2,

@@ -77,8 +77,8 @@ const Intro = (props) => {
           <h2>Hi,</h2>
           <h3>I am Soumali</h3>
           <h6>
-            I am a frontend developer. An enthusiast in AI and Ml. Keen to learn
-            new technologies and love solving problems.
+            I am a full stack developer. An enthusiast in AI and Ml. Keen to learn
+            new technologies and love solving problems. 
           </h6>
         </Text>
       </SubBox>

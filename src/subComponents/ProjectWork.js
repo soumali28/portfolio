@@ -3,20 +3,35 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Box = styled.li`
-  width: 17rem;
-  height: 45vh;
-  background-color: ${(props) => props.theme.text};
-  color: ${(props) => props.theme.body};
+  width: 45rem;
+  height: 50vh;
+  background-color: transparent;
+  color: ${(props) => props.theme.text};
   padding: 1.5rem 2rem;
-  margin-right: 8rem;
-  border-radius: 0 50px 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 4px solid #3d0000;
-  box-shadow: 0px 2px 12px #f9c5d5;
-  transition: all 0.2s ease;
+  border: 2px solid #ffeddb;
 
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .texts{
+    margin-right: 10px;
+  }
+  .projImg {
+    width: 70%;
+  }
+  .projImg img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
   &:hover {
     transform: scale(1.1);
   }
@@ -33,7 +48,7 @@ const Desciption = styled.span`
 `;
 const Tags = styled.div`
   border-top: 2px solid ${(props) => props.theme.body};
-  padding-top: 0%.5rem;
+  padding-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
 `;
@@ -43,16 +58,14 @@ const Tag = styled.span`
 
 const Footer = styled.footer`
   display: flex;
-  justify-content: space-between;
 `;
 const Link = styled(NavLink)`
-  padding: 0.2rem 0.6rem;
-  border-radius: 30px;
-  color: #3d0000;
+  padding: 0.2rem 0.6rem; 
+  color: #ffeddb;
   text-decoration: none;
-  border: 2px solid #3d0000;
   font-weight: 700;
-  margin-top:5px;
+  margin-top: 15px;
+  margin-right: 30px;
 
   &:hover {
     background-color: #3d0000;
@@ -61,24 +74,31 @@ const Link = styled(NavLink)`
 `;
 
 const ProjectWork = (props) => {
-  const { id, name, description, tags, demo, github } = props.data;
+  const { id, name, img, description, tags, demo, github } = props.data;
   return (
     <Box key={id}>
-      <Title>{name}</Title>
-      <Desciption>{description}</Desciption>
-      <Tags>
-        {tags.map((t, id) => {
-          return <Tag key={id}> #{t}</Tag>;
-        })}
-      </Tags>
-      <Footer>
-        <Link to={{ pathname: `${demo}` }} target="_blank">
-          Vist
-        </Link>
-        <Link to={{ pathname: `${github}` }} target="_blank">
-          Github
-        </Link>
-      </Footer>
+      <div className="details">
+        <div className="texts">
+          <Title>{name}</Title> <br />
+          <Desciption>{description}</Desciption>
+          <Tags>
+            {tags.map((t, id) => {
+              return <Tag key={id}> #{t}</Tag>;
+            })}
+          </Tags>
+          <Footer>
+            <Link to={{ pathname: `${demo}` }} target="_blank">
+              Link
+            </Link>
+            <Link to={{ pathname: `${github}` }} target="_blank">
+              Source Code
+            </Link>
+          </Footer>
+        </div>
+        <div className="projImg">
+          <img src={img} alt={img}></img>
+        </div>
+      </div>
     </Box>
   );
 };

@@ -14,23 +14,22 @@ import BigTitle from "../subComponents/BigTitle";
 const MainContainer = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 `;
 
 const Box = styled.div`
-  position: fixed;
+  border: 1px solid #FFEDDB;
+  border-radius: 10px;
+  padding: 50px 120px 100px;
+  margin: 10rem 0;
+  box-shadow: 0px 2px 20px #999;
   top: 12rem;
   left: calc(10rem + 15vw);
-  height: 40vh;
-  display: flex;
-  justify-content: space-evenly;
+  min-height: screen;
   z-index: 3;
-  overflow-y: visible;
 `;
 
 const Bubble = styled.div`
@@ -42,22 +41,22 @@ const Bubble = styled.div`
 `;
 
 const Scroll = styled.div`
-   background-color: ${(props) => props.theme.body};
-`
+  background-color: ${(props) => props.theme.body};
+`;
 
 const Projects = () => {
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
-  useEffect(() => {
-    let element = ref.current;
+  // useEffect(() => {
+  //   let element = ref.current;
 
-    const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset * 3}rem)`;
-    };
+  //   const rotate = () => {
+  //     element.style.transform = `translateX(${-window.pageYOffset * 3}rem)`;
+  //   };
 
-    window.addEventListener("scroll", rotate);
-    return () => window.removeEventListener("scroll", rotate);
-  });
+  //   window.addEventListener("scroll", rotate);
+  //   return () => window.removeEventListener("scroll", rotate);
+  // });
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -65,23 +64,26 @@ const Projects = () => {
         <LogoComponent theme="dark" />
         <PowerButton theme="dark" />
         <Socials theme="dark" />
-        <Bubble>
+        {/* <Bubble>
           <Particles
             style={{ position: "absolute", top: "0" }}
             params={configBubble}
           />
-        </Bubble>
+        </Bubble> */}
 
-        <Box ref={ref}>
+        {/* <Box ref={ref}>
+          {Project.map((props) => (
+            <ProjectWork key={props.id} data={props} />
+          ))}
+        </Box> */}
+        <Box>
           {Project.map((props) => (
             <ProjectWork key={props.id} data={props} />
           ))}
         </Box>
       </MainContainer>
-      <Scroll>
-           <br/>    
-      </Scroll>
-      <BigTitle text="PROJECT" top="10%"  right="15%"/>
+
+      <BigTitle text="PROJECTS" top="10%" right="15%" />
     </ThemeProvider>
   );
 };
