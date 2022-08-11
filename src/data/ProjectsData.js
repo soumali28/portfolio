@@ -10,40 +10,40 @@ export const Project = [
     },
     {
         id:2,
-        name:"Music Kit",
-        description:"It is mini music cafe which includes tabla, guitar and drum.",
-        tags:["Html","Css","JavaScript"],
-        
-        demo:"https://soumali28.github.io/music-kit/",
-        github:"https://github.com/soumali28/music-kit"
+        name:"AEC Coding Club",
+        description:"This is community site and event management webapp for the Coding Club of Asansol Engineering College.",
+        tags:["MongoDb","ReactJS","NodeJs", "JavaScript"],
+        img: "https://i.ibb.co/n09vGqz/AEC-Coding-Club-Google-Chrome-11-08-2022-18-15-15-2.png",
+        demo:"https://testaeccc.web.app/",
+        github:"https://github.com/soumali28/AEC-Coding-Club-Website-1"
         
     },
     {
         id:3,
-        name:"To-do List",
-        description:"A todo app build to track all the necessary things of the day",
-        tags:["react","css"],
-        
-        demo:"https://to-do-list-28.netlify.app/",
-        github:"https://github.com/soumali28/Todo-List"
+        name:"Portfolio",
+        description:"This is the portfolio of me containing all my latest achievements and projects",
+        tags:["ReactJs","Styled-Components", "Frammer-Motion",], 
+        img: "https://i.ibb.co/1RQn4Fv/Soumali-Gorai-Google-Chrome-11-08-2022-19-33-06-2.png",
+        demo:"https://soumali.netlify.app/",
+        github:"https://github.com/soumali28/portfolio"
     },
     {
         id:4,
-        name:"Bmi Calculator",
-        description:"A calculator that calculates you bmi and has an amazing UI.",
-        tags:["Css","Html","JavaScript"],
-        
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        name:"Memory Game",
+        description:"It is a simple card flipping memory game which shows the user their score based on number of moves",
+        tags:["Html","Css", "JavaScript"],
+        img: "https://i.ibb.co/7nnLXxy/Memory-Game-Google-Chrome-11-08-2022-19-46-09.png",
+        demo:"https://soumali28.github.io/Memory-Game/",
+        github:"https://github.com/soumali28/Memory-Game"
        
     },{
         id:5,
-        name:"Meet Landing Page",
-        description:"A group chat landing page build using bootstrap .",
+        name:"Academia",
+        description:"A landing page for school or any institution.",
         tags:["Html","CSS","Bootstrap"],
-        
-        demo:"https://soumali28.github.io/Meet-Landing-page/",
-        github:"https://github.com/soumali28/Meet-Landing-page"
+        img: "https://i.ibb.co/JdVqyHZ/Academica-Google-Chrome-11-08-2022-19-48-55.png",
+        demo:"https://soumali28.github.io/Academica/",
+        github:"https://github.com/soumali28/Academica"
         
     }
     

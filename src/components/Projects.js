@@ -10,6 +10,7 @@ import ProjectWork from "../subComponents/ProjectWork";
 import Particles from "react-particles-js";
 import configBubble from "../config/particlesjs-config-bubble.json";
 import BigTitle from "../subComponents/BigTitle";
+import { Link } from "react-router-dom";
 
 const MainContainer = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -21,7 +22,7 @@ const MainContainer = styled.div`
 `;
 
 const Box = styled.div`
-  border: 1px solid #FFEDDB;
+  border: 1px solid #ffeddb;
   border-radius: 10px;
   padding: 50px 120px 100px;
   margin: 10rem 0;
@@ -64,12 +65,12 @@ const Projects = () => {
         <LogoComponent theme="dark" />
         <PowerButton theme="dark" />
         <Socials theme="dark" />
-        {/* <Bubble>
+        <Bubble>
           <Particles
             style={{ position: "absolute", top: "0" }}
             params={configBubble}
           />
-        </Bubble> */}
+        </Bubble>
 
         {/* <Box ref={ref}>
           {Project.map((props) => (
@@ -80,6 +81,14 @@ const Projects = () => {
           {Project.map((props) => (
             <ProjectWork key={props.id} data={props} />
           ))}
+          <div style={{ textAlign: "center" }}>
+            <a
+              href="https://github.com/soumali28?tab=repositories"
+              target="_blank"
+            >
+              <button className="btn btn-warning">View More</button>
+            </a>
+          </div>
         </Box>
       </MainContainer>
 
