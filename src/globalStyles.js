@@ -19,7 +19,16 @@ body{
     overflow-x:hidden;
     font-family: "Source Sans Pro",sans-serif;
 }
-
+${'' /* custom scrollbar */}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #ffeddb;
+}
+::-webkit-scrollbar-thumb {
+  background: #7D0633; 
+}
 
 `
 export default GlobalStyle;
