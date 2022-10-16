@@ -43,6 +43,12 @@ const Contact = styled(NavLink)`
   &:hover{
     color:  ${(props) => props.click ? props.theme.body : props.theme.text};
   }
+  @media(max-width: 500px){
+    
+    h3{
+      font-size: 18px;
+    }
+  }
 `;
 
 const Honors = styled(NavLink)`
@@ -57,6 +63,14 @@ const Honors = styled(NavLink)`
 
   &:hover{
     color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  }
+
+  @media(max-width: 500px){
+    right: calc(1rem + -6vw);
+
+    h3{
+      font-size: 18px;
+    }
   }
 `;
 
@@ -73,6 +87,12 @@ const Works = styled(NavLink)`
   &:hover{
     color:  ${(props) => props.click ? props.theme.body : props.theme.text};
   }
+  @media(max-width: 500px){
+
+    h3{
+      font-size: 18px;
+    }
+  }
 `;
 
 const BottomBar = styled.div`
@@ -84,6 +104,11 @@ const BottomBar = styled.div`
 
   display: flex;
   justify-content: space-evenly;
+  @media(max-width: 500px){
+    h3{
+      font-size: 18px;
+    }
+  }
 `;
 
 const ABOUT = styled(NavLink)`

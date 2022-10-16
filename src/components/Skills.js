@@ -53,6 +53,12 @@ const MainContainer = styled.div`
     height: 40px;
     margin-right: 10px;
   }
+  @media(max-width: 500px){
+    .skillscard{
+      margin: 140px 20px 100px;
+      padding: 20px;
+    }
+  }
 `;
 
 
@@ -68,8 +74,8 @@ const Skills = () => {
         <Card className="skillscard">
           <h3 className="title">Languages and Tools</h3>
           {/* skills */}
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -80,7 +86,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -94,8 +100,8 @@ const Skills = () => {
           </Row>
 
 
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -106,7 +112,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -119,8 +125,8 @@ const Skills = () => {
             </Col>
           </Row>
 
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -131,7 +137,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -145,8 +151,8 @@ const Skills = () => {
           </Row>
 
           
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -157,7 +163,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -170,8 +176,8 @@ const Skills = () => {
             </Col>
           </Row>
 
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -182,7 +188,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -195,8 +201,8 @@ const Skills = () => {
             </Col>
           </Row>
 
-          <Row className="mb-3">
-            <Col lg="6">
+          <Row>
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img
@@ -207,7 +213,7 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="mb-3">
               <Card className="skills">
                 <Card.Body>
                   <img

@@ -36,6 +36,9 @@ const IntroStyle = styled(motion.div)`
   border-right: 2px solid ${(props) => props.theme.text};
 
   z-index: 1;
+  @media(max-width: 500px){
+    width: 70vw;
+  }
 `;
 
 const SubBox = styled.div`
@@ -50,6 +53,12 @@ const SubBox = styled.div`
     transform: translate(-50%, -50%);
     width: 60%;
     height: auto;
+  }
+  @media(max-width: 500px){
+    .pic{
+      width: 90%;
+      top: 8.9rem;
+    }
   }
 `;
 
