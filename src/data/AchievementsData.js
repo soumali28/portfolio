@@ -11,7 +11,7 @@ export const Achievement = [
   {
     id: 2,
     name: "Mentor at Social Summer of Code'22",
-    desp: "Guided the contributors throughout the 3 month program...",
+    desp: "An opensource program where I guided and mentored 30+ students on various technologies on projects like Memories app(social media app) and developers portfolio, helping them to merge PRs, how to write clean code and integrating backend and frontend.",
     tags: ["ssoc", "opensource", "mentor"],
     imgSrc:
       "https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png",
