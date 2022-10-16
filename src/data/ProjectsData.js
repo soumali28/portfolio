@@ -5,7 +5,7 @@ export const Project = [
         description:"This is a todo app used for tracking all your tasks.",
         tags:["MongoDb","ReactJS","NodeJs", "TailwindCSS"],
         img: "https://i.ibb.co/B34XQyN/React-App-Google-Chrome-24-07-2022-17-54-41.png",
-        demo:"https://sou-task-manager.netlify.app/",
+        demo:"https://taskwizard.netlify.app",
         github:"https://github.com/soumali28/Task-Manager"
     },
     {
