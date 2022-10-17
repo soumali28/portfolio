@@ -1,5 +1,5 @@
 import {createGlobalStyle} from "styled-components";
-
+import { darkTheme } from "./components/Themes";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -24,10 +24,10 @@ ${'' /* custom scrollbar */}
     width: 8px;
 }
 ::-webkit-scrollbar-track{
-    background: #ffeddb;
+    background: ${(props) => props.theme === "dark" ? darkTheme.body : darkTheme.text };
 }
 ::-webkit-scrollbar-thumb {
-  background: #7D0633; 
+  background: ${(props) => props.theme === "dark" ? darkTheme.text : darkTheme.body }; 
 }
 
 `

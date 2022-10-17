@@ -10,7 +10,6 @@ import ProjectWork from "../subComponents/ProjectWork";
 import Particles from "react-particles-js";
 import configBubble from "../config/particlesjs-config-bubble.json";
 import BigTitle from "../subComponents/BigTitle";
-import { Link } from "react-router-dom";
 
 const MainContainer = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -46,19 +45,6 @@ const Scroll = styled.div`
 `;
 
 const Projects = () => {
-  // const ref = useRef(null);
-
-  // useEffect(() => {
-  //   let element = ref.current;
-
-  //   const rotate = () => {
-  //     element.style.transform = `translateX(${-window.pageYOffset * 3}rem)`;
-  //   };
-
-  //   window.addEventListener("scroll", rotate);
-  //   return () => window.removeEventListener("scroll", rotate);
-  // });
-
   return (
     <ThemeProvider theme={darkTheme}>
       <MainContainer>

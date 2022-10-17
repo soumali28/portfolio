@@ -28,7 +28,7 @@ const Power = styled.button`
   }
 `;
 
-const PowerButton = () => {
+const PowerButton = (props) => {
   return (
     <NavLink to="/">
       <Power>Home</Power>
