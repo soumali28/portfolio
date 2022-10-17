@@ -14,11 +14,11 @@ const Image = styled.div`
 const Title = styled.h3`
   display: block;
   padding: 0%, 5rem 0;
-  color: #980f5a;
+  color: ${ props => props.theme.text};
   padding-top: 1rem;
   font-family: "Karla", sans-serif;
   font-weight: 700;
-  border-bottom: 1px solid #980f5a;
+  border-bottom: 1px solid ${ props => props.theme.text};
 `;
 
 

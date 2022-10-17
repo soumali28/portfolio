@@ -3,6 +3,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { darkTheme, lightTheme } from "../components/Themes";
 
 const Power = styled.button`
   position: fixed;
@@ -13,19 +14,13 @@ const Power = styled.button`
   justify-content: center;
   align-items: center;
   z-index: 6;
-
-  background-image: linear-gradient(to bottom right,  #FFEDDB, #980F5A );
-  padding: 0.5rem;
-  border: 1px solid #8a39e1;
-  border-radius: 10px;
+  background-color: ${(props) => props.theme === "dark" ? lightTheme.body: lightTheme.text };
+  color: ${(props) => props.theme === "dark" ? darkTheme.body : darkTheme.text };
+  padding: 5px 10px;
+  border-radius: 2px;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: inset 0 -2px 8px #461111;
-
-  &:hover {
-    box-shadow: inset 0 2px 8px #750550;
-   
-  }
+  border: none;
 
   & > *:first-child {
     text-decoration: none;
@@ -35,9 +30,9 @@ const Power = styled.button`
 
 const PowerButton = () => {
   return (
-    <Power>
-      <NavLink to="/">Home</NavLink>
-    </Power>
+    <NavLink to="/">
+      <Power>Home</Power>
+    </NavLink>
   );
 };
 

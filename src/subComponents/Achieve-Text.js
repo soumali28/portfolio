@@ -18,11 +18,6 @@ const sentence = {
       staggerChildren: 0.08,
     },
   },
-  // exit: {
-  //   zIndex: 0,
-  //   //x: 600,
-  //   opacity: 0
-  // }
 };
 
 const letter = {
@@ -49,7 +44,7 @@ const Text = styled.div`
     font-size: calc(1.5rem + 1vw);
   }
   .heading {
-    color: #900C3F;
+    color: #AD8B73;
     font-size: calc(2.2rem + 1vw);
   }
 `;

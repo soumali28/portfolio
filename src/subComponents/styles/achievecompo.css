@@ -1,29 +1,25 @@
 .flip-card {
   background-color: transparent;
   height: 20rem;
-
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-
   display: flex;
   flex-direction: column;
   z-index: 5;
-
   align-items: center;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-
   transition: transform 0.8s;
   transform-style: preserve-3d;
-
   width: calc(10rem + 15vw);
   text-decoration: none;
   height: 20rem;
   padding: 1rem;
   border: 2px solid #fdeff4;
   box-shadow: 0 2px 8px #e3b7a0;
+  background-color: #fff;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -45,8 +41,8 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #bb6464;
-  color: white;
+  background-color: #E3B7A0;
+  color: #1c0a00 ;
   transform: rotateY(180deg);
   text-align: center;
   padding: 1.5rem;
