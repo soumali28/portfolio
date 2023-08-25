@@ -18,7 +18,6 @@ const MainContainer = styled.div`
 
   position: relative;
 
-  h3,
   h4,
   h5,
   h6 {
@@ -207,24 +206,24 @@ const Main = () => {
         </Center>
 
         <Contact to={{ pathname: "/contact" }}>
-          <motion.h3 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Say hi...</motion.h3>
+          <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Say Hi 👋</motion.h4>
         </Contact>
 
         <Honors to={{ pathname: "/achievements" }}>
-        <motion.h3 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Achievements</motion.h3>
+        <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Achievements</motion.h4>
         </Honors>
 
-        <Works to={{ pathname: "/projects" }} click={click}>
-        <motion.h3 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Projects</motion.h3>
+        <Works to={{ pathname: "/work" }} click={click}>
+        <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Work</motion.h4>
         </Works>
 
         <BottomBar>
           <ABOUT to={{ pathname: "/about" }} click={click}>
-            <motion.h3 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>About</motion.h3>
+            <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>About</motion.h4>
           </ABOUT>
 
           <SKILL to={{ pathname: "/skills" }}>
-            <motion.h3 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>My skills</motion.h3>
+            <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>My skills</motion.h4>
           </SKILL>
         </BottomBar>
       </Container>

@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./globalStyles";
-import { lightTheme, darkTheme } from "./components/Themes";
+import { lightTheme } from "./components/Themes";
 import { Route, Switch } from "react-router-dom";
 
 //Components
@@ -22,10 +22,10 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route exact path="/about" component={About} />
           <Route exact path="/achievements" component={Achievements} />
-          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/work" component={Projects} />
           <Route exact path="/skills" component={Skills} />
-          <Route exact path="/contact" component={Contacts}/>
-          <Route  component={Error}/>
+          <Route exact path="/contact" component={Contacts} />
+          <Route component={Error} />
         </Switch>
       </ThemeProvider>
     </>

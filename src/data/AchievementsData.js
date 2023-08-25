@@ -1,4 +1,3 @@
-import GirlScript from "../assets/Images/gitlscript.png";
 export const Achievement = [
   {
     id: 1,

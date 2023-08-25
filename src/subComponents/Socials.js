@@ -35,22 +35,22 @@ const Socials = (props) => {
         <Icons>
             <div>
                 <NavLink target={"_blank"} style={{color: "inherit"}} to={{pathname: "https://github.com/soumali28"}}>
-                    <Github width={30} height={30} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
+                    <Github width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             </div>
             <div>
                 <NavLink target={"_blank"} style={{color: "inherit"}} to={{pathname: "https://www.linkedin.com/in/soumali-gorai-566b01220/"}}>
-                    <LinkedIn width={30} height={30} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
+                    <LinkedIn width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             </div>
             <div>
                 <NavLink target={"_blank"} style={{color: "inherit"}} to={{pathname: "https://twitter.com/_soumali_?t=PqRqu78kpVe-05t96hQvCg&s=09"}}>
-                    <Twitter width={30} height={30} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
+                    <Twitter width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             </div>
             <div>
                 <NavLink target={"_blank"} style={{color: "inherit"}} to={{pathname: "mailto:goraisoumali5@gmsil.com"}}>
-                    <Mail width={30} height={30} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
+                    <Mail width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             </div>
         </Icons>

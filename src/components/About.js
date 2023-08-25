@@ -70,7 +70,7 @@ const About = () => {
             </Col>
             <Col>
               <Image>
-                <img src={Sou}></img>
+                <img src={Sou} alt="profile"></img>
               </Image>
             </Col>
           </Row>

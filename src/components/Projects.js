@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { darkTheme } from "./Themes";
 import { ThemeProvider } from "styled-components";
@@ -40,9 +39,9 @@ const Bubble = styled.div`
   bottom: 0;
 `;
 
-const Scroll = styled.div`
-  background-color: ${(props) => props.theme.body};
-`;
+// const Scroll = styled.div`
+//   background-color: ${(props) => props.theme.body};
+// `;
 
 const Projects = () => {
   return (
@@ -70,7 +69,7 @@ const Projects = () => {
           <div style={{ textAlign: "center" }}>
             <a
               href="https://github.com/soumali28?tab=repositories"
-              target="_blank"
+              target="blank"
             >
               <button className="btn btn-warning">View More</button>
             </a>

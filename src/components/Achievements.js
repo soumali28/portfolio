@@ -63,7 +63,7 @@ const Achievements = () => {
   useEffect(() => {
     let num = (window.innerHeight - 20) / 30;
     setNumbers(parseInt(num));
-  });
+  },[]);
 
   return (
     <MainContainer>
@@ -78,7 +78,7 @@ const Achievements = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1.5 }}
           >
-            <img className="pic" src={Profile}></img>
+            <img className="pic" src={Profile} alt="achievement"></img>
           </motion.div>
         </SubBox>
       </Banner>

@@ -121,7 +121,7 @@ const Intro = (props) => {
             I am a full stack developer. An enthusiast in AI and Ml. Keen to
             learn new technologies and love solving problems.
           </h6>
-          <a href="https://drive.google.com/file/d/1hZGgLhJdXihD-yO5hbSDWHF_lyocFlCL/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/1hZGgLhJdXihD-yO5hbSDWHF_lyocFlCL/view?usp=sharing" target="blank">
            Resume
           </a>
         </Text>
@@ -133,7 +133,7 @@ const Intro = (props) => {
           animate={{ opacity: 1 }}
           transition={{ type: "spring", duration: 1, delay: 2 }}
         >
-          <img className="pic" src={Pic} alt="Profile Image"></img>
+          <img className="pic" src={Pic} alt="Profile"></img>
         </motion.div>
       </SubBox>
     </IntroStyle>
