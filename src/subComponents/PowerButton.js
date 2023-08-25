@@ -14,8 +14,10 @@ const Power = styled.button`
   justify-content: center;
   align-items: center;
   z-index: 6;
-  background-color: ${(props) => props.theme === "dark" ? lightTheme.body: lightTheme.text };
-  color: ${(props) => props.theme === "dark" ? darkTheme.body : darkTheme.text };
+  background-color: ${(props) =>
+    props.theme === "dark" ? lightTheme.body : lightTheme.text};
+  color: ${(props) =>
+    props.theme === "dark" ? darkTheme.body : darkTheme.text};
   padding: 5px 10px;
   border-radius: 2px;
   cursor: pointer;
@@ -31,7 +33,7 @@ const Power = styled.button`
 const PowerButton = (props) => {
   return (
     <NavLink to="/">
-      <Power>Home</Power>
+      <Power theme={props.theme}>Home</Power>
     </NavLink>
   );
 };

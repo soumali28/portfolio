@@ -5,12 +5,12 @@ import { Route, Switch } from "react-router-dom";
 
 //Components
 import Main from "./components/Main";
-import About from "./components/About";
+import Education from "./components/Education";
 import Achievements from "./components/Achievements";
-import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Error from "./components/Error";
 import Contacts from "./components/Contacts";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/education" component={Education} />
           <Route exact path="/achievements" component={Achievements} />
-          <Route exact path="/work" component={Projects} />
+          <Route exact path="/work" component={Work} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/contact" component={Contacts} />
           <Route component={Error} />

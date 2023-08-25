@@ -9,6 +9,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import Socials from "../subComponents/Socials";
 import Intro from "../subComponents/Intro";
+import { darkTheme } from "./Themes";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -39,12 +40,11 @@ const Contact = styled(NavLink)`
   z-index: 1;
   cursor: pointer;
 
-  &:hover{
-    color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  &:hover {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   }
-  @media(max-width: 500px){
-    
-    h3{
+  @media (max-width: 500px) {
+    h3 {
       font-size: 18px;
     }
   }
@@ -60,21 +60,21 @@ const Honors = styled(NavLink)`
   cursor: pointer;
   transform: rotate(90deg) translate(-20%, -90%);
 
-  &:hover{
-    color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  &:hover {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     right: calc(1rem + -6vw);
 
-    h3{
+    h3 {
       font-size: 18px;
     }
   }
 `;
 
 const Works = styled(NavLink)`
-  color: ${(props) => props.click ? props.theme.body : props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
   left: calc(1rem + 2vw);
@@ -83,12 +83,11 @@ const Works = styled(NavLink)`
   cursor: pointer;
   transform: translate(-50%, -50%) rotate(-90deg);
 
-  &:hover{
-    color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  &:hover {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   }
-  @media(max-width: 500px){
-
-    h3{
+  @media (max-width: 500px) {
+    h3 {
       font-size: 18px;
     }
   }
@@ -103,21 +102,21 @@ const BottomBar = styled.div`
 
   display: flex;
   justify-content: space-evenly;
-  @media(max-width: 500px){
-    h3{
+  @media (max-width: 500px) {
+    h3 {
       font-size: 18px;
     }
   }
 `;
 
 const ABOUT = styled(NavLink)`
-  color: ${(props) => props.click ? props.theme.body : props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
   z-index: 1;
   cursor: pointer;
 
-  &:hover{
-    color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  &:hover {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   }
 `;
 
@@ -127,8 +126,8 @@ const SKILL = styled(NavLink)`
   z-index: 1;
   cursor: pointer;
 
-  &:hover{
-    color:  ${(props) => props.click ? props.theme.body : props.theme.text};
+  &:hover {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   }
 `;
 
@@ -168,18 +167,18 @@ const Center = styled.button`
 
 const DarkDiv = styled.div`
   position: absolute;
-  background-color: ${props => props.theme.text};
+  background-color: ${(props) => props.theme.text};
   top: 0;
   bottom: 0;
   right: 50%;
-  width: ${props => props.click ? "50%" : "0"};
-  height: ${props => props.click ? "100%" : "0"};
+  width: ${(props) => (props.click ? "50%" : "0")};
+  height: ${(props) => (props.click ? "100%" : "0")};
   z-index: 1;
 
-  transition:  height 0.5s ease , width 1s ease 0.5s ;
+  transition: height 0.5s ease, width 1s ease 0.5s;
 `;
 
-const Main = () => {
+const Main = (props) => {
   const [click, setClick] = useState(false);
 
   function handleClick() {
@@ -192,8 +191,8 @@ const Main = () => {
 
       <Container>
         <PowerButton />
-        <LogoComponent theme = {click ? "dark" : "light"}/>
-        <Socials theme = {click ? "dark" : "light"}/>
+        <LogoComponent theme={click ? "dark" : "light"} />
+        <Socials theme={click ? "dark" : "light"} />
 
         <Center click={click}>
           <YinYang
@@ -206,24 +205,34 @@ const Main = () => {
         </Center>
 
         <Contact to={{ pathname: "/contact" }}>
-          <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Say Hi 👋</motion.h4>
+          <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+            Say Hi 👋
+          </motion.h4>
         </Contact>
 
         <Honors to={{ pathname: "/achievements" }}>
-        <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Achievements</motion.h4>
+          <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+            Achievements
+          </motion.h4>
         </Honors>
 
         <Works to={{ pathname: "/work" }} click={click}>
-        <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>Work</motion.h4>
+          <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+            Work
+          </motion.h4>
         </Works>
 
         <BottomBar>
-          <ABOUT to={{ pathname: "/about" }} click={click}>
-            <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>About</motion.h4>
+          <ABOUT to={{ pathname: "/education" }} click={click}>
+            <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              Education
+            </motion.h4>
           </ABOUT>
 
           <SKILL to={{ pathname: "/skills" }}>
-            <motion.h4 whileHover={{scale:1.1}} whileTap={{scale:0.5}}>My skills</motion.h4>
+            <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              Skills
+            </motion.h4>
           </SKILL>
         </BottomBar>
       </Container>
