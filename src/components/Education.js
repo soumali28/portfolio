@@ -5,10 +5,10 @@ import { ThemeProvider } from "styled-components";
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import Socials from "../subComponents/Socials";
+import { EducationData } from "../data/Educationdata";
 import ParticleComponent from "../subComponents/ParticleComponent";
 
 import Sou from "../assets/Images/about.jpg";
-import { Col, Row } from "react-bootstrap";
 import EducationCompo from "../subComponents/EducationCompo";
 
 // style
@@ -16,7 +16,6 @@ const MainContainer = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100%;
   padding: 200px 0 100%;
-  // height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -49,6 +48,15 @@ const MainContainer = styled.div`
     background-color: #ebd8b7;
     z-index: 1;
   }
+  .containerScl {
+    width: 88%;
+    position: absolute;
+    top: calc(25% + 1.2rem);
+    left: 0;
+    right: 0;
+    //right: calc(5% + 0.8rem);
+    z-index: 3;
+  }
 `;
 
 const Image = styled.div`
@@ -80,7 +88,12 @@ const Education = () => {
           <img src={Sou} alt="profile"></img>
         </Image>
         <div className="vertical"></div>
-        <EducationCompo />
+        <div className="containerScl">
+          {EducationData.map((props) => {
+            return <EducationCompo key={props.id} active={props} />;
+          })}
+          {/* <EducationCompo /> */}
+        </div>
       </MainContainer>
     </ThemeProvider>
   );
