@@ -5,13 +5,13 @@ import { ThemeProvider } from "styled-components";
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import Socials from "../subComponents/Socials";
-import { FaGraduationCap, FaSchool } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { EducationData } from "../data/Educationdata";
-import ParticleComponent from "../subComponents/ParticleComponent";
 
 import "react-vertical-timeline-component/style.min.css";
 import Sou from "../assets/Images/about.jpg";
@@ -19,7 +19,7 @@ import Sou from "../assets/Images/about.jpg";
 // style
 const MainContainer = styled.div`
   background-color: ${(props) => props.theme.body};
-  padding: 200px 0 700px;
+  padding: 200px 0 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +32,20 @@ const MainContainer = styled.div`
     background-color: #ebd8b7;
     z-index: 1;
 
-    span {
+    & > :first-child {
       position: absolute;
       bottom: 0;
       color: #ebd8b7;
-      font-size: 68px;
+      font-size: 48px;
       opacity: 0.4;
       margin-left: 12%;
+      font-family: "Dancing Script", cursive;
+    }
+    .exp {
+      color: #ebd8b7;
+      font-size: 48px;
+      opacity: 0.4;
+      margin-left: 32%;
       font-family: "Dancing Script", cursive;
     }
   }
@@ -58,7 +65,7 @@ const MainContainer = styled.div`
     margin-top: 10px;
 
     & > :first-child {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   @media screen and (max-width: 528px) {
@@ -89,7 +96,7 @@ const Image = styled.div`
 `;
 
 // code
-const Education = () => {
+const Experience = () => {
   let circle = {
     padding: "20px",
     background: "rgba(62, 37, 25, 0.35)",
@@ -118,10 +125,10 @@ const Education = () => {
         <LogoComponent theme="dark" />
         <PowerButton theme="dark" />
         <Socials theme="dark" />
-        {/* <ParticleComponent theme="dark" /> */}
 
         <div className="horizontal">
           <span>Education</span>
+          <span className="exp">Experience</span>
         </div>
         <Image>
           <img src={Sou} alt="profile"></img>
@@ -139,14 +146,18 @@ const Education = () => {
                   date={props.date}
                   iconStyle={circle}
                   icon={
-                    props.type === "school" ? <FaSchool /> : <FaGraduationCap />
+                    props.type === "school" ? (
+                      <FaGraduationCap />
+                    ) : (
+                      <BsFillBriefcaseFill />
+                    )
                   }
                 >
                   <h3 className="vertical-timeline-element-title">
-                    {props.school}
+                    {props.title}
                   </h3>
                   <div className="board">
-                    <span>{props.marks}</span>
+                    <span>{props.desp}</span>
                     <span>{props.board}</span>
                   </div>
                 </VerticalTimelineElement>
@@ -159,4 +170,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

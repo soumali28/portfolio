@@ -223,9 +223,9 @@ const Main = (props) => {
         </Works>
 
         <BottomBar>
-          <ABOUT to={{ pathname: "/education" }} click={click}>
+          <ABOUT to={{ pathname: "/experience" }} click={click}>
             <motion.h4 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
-              Education
+              Experience
             </motion.h4>
           </ABOUT>
 

@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 
 //Components
 import Main from "./components/Main";
-import Education from "./components/Education";
+import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
 import Skills from "./components/Skills";
 import Error from "./components/Error";
@@ -20,7 +20,7 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/education" component={Education} />
+          <Route exact path="/experience" component={Experience} />
           <Route exact path="/achievements" component={Achievements} />
           <Route exact path="/work" component={Work} />
           <Route exact path="/skills" component={Skills} />
