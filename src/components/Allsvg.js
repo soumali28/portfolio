@@ -70,6 +70,26 @@ export const Twitter = (props) => {
   );
 };
 
+const Hashnode = (props) => (
+  <svg
+    aria-hidden="true"
+    data-prefix="fab"
+    data-icon="hashnode"
+    className="prefix__svg-inline--fa prefix__fa-twitter prefix__fa-w-16"
+    xmlns="http://www.w3.org/2000/svg"
+    width={800}
+    height={800}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path
+      fill={props.fill}
+      d="m22.351 8.019-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z"
+    />
+  </svg>
+);
+export default Hashnode;
+
 export const Anchor = (props) => {
   return (
     <svg

@@ -76,31 +76,33 @@ const Text = styled(motion.div)`
     font-size: calc(0.5rem + 1.3vw);
     font-weight: 300;
   }
-  a{
-    color: #FFD372;
+  a {
+    color: #ffd372;
     font-size: 20px;
     margin: 25px 0 10px;
-    border: 1px solid #FFD372;
+    border: 1px solid #ffd372;
     border-radius: 5px;
     padding: 5px 0;
     width: 50%;
     text-align: center;
     text-decoration: none;
   }
-  a:hover{
-    background-color: #FFD372;
-    color:  ${(props) => props.theme.text};
+  a:hover {
+    background-color: #ffd372;
+    color: ${(props) => props.theme.text};
   }
-  @media (max-width:500px){
-    h2,h3,h6{
-    font-size: 12px;
+  @media (max-width: 500px) {
+    h2,
+    h3,
+    h6 {
+      font-size: 12px;
     }
-    a{
+    a {
       width: 100%;
       font-size: 15px;
     }
   }
- `;
+`;
 
 const Intro = (props) => {
   return (
@@ -118,11 +120,14 @@ const Intro = (props) => {
           <h2>Hi,</h2>
           <h3>I am Soumali</h3>
           <h6>
-            I am a full stack developer. An enthusiast in AI and Ml. Keen to
-            learn new technologies and love solving problems.
+            I am a full stack web developer. Love to write blogs and socialize
+            with people.
           </h6>
-          <a href="https://drive.google.com/file/d/1hZGgLhJdXihD-yO5hbSDWHF_lyocFlCL/view?usp=sharing" target="blank">
-           Resume
+          <a
+            href="https://drive.google.com/file/d/1_7PUDXNnvAemOf2dwPwtT-QpNTSUN4HE/view?usp=sharing"
+            target="blank"
+          >
+            Resume
           </a>
         </Text>
       </SubBox>
