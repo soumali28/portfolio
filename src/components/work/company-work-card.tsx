@@ -74,7 +74,7 @@ const CompanyWorkCard = ({
 
       <div className="flex gap-4">
         {/* Logo */}
-        <div className="flex justify-center items-center bg-zinc-200/15 rounded-md w-12 h-12 shrink-0">
+        <div className="flex justify-center items-center bg-zinc-200/15 border-3 border-gray-200/60 rounded-full w-12 h-12 shrink-0">
           {logo ? (
             <img
               src={logo}

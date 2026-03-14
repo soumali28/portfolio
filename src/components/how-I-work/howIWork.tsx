@@ -1,27 +1,34 @@
 import Section from "../section";
 import line from "../../assets/images/howIWork/line.png";
-import { howIWorkSteps } from "../../data/how-I-work";
+import { howIWorkSteps } from "../../assets/data/how-I-work";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const HowIWork = () => {
+  const [aiEnabled, setAiEnabled] = useState(false);
   return (
     <Section
       title="How I Think and Build"
       highlight="Build"
       showDivider={false}
-      className="h-100"
+      className="relative mt-20 h-100 text-center"
     >
-      {/* Visual Timeline */}
-      {/* <div className="max-w-sm">
-      <span className="text-secondary">
-        I approach every project with a product mindset — understanding user
-        problems deeply, building scalable and intuitive solutions, and shipping
-        early to validate with real feedback. With AI accelerating research and
-        iteration, I focus on delivering measurable impact, not just code.
-      </span>
-      </div> */}
+      <div className="top-12 left-1/2 z-20 absolute flex justify-center mb-4 -translate-x-1/2">
+        <motion.button
+          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.05 }}
+          onClick={() => setAiEnabled(!aiEnabled)}
+          className={`cursor-pointer flex items-center gap-2 px-3 py-1.5 text-xs rounded-full border transition-all duration-200 ${
+            aiEnabled
+              ? "bg-neutral-900 text-white border-neutral-900"
+              : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300"
+          }`}
+        >
+          ✨ {aiEnabled ? "AI Assist Enabled" : "Enable AI Assist"}
+        </motion.button>
+      </div>
 
-      <div className="relative my-0">
+      <div className="relative my-0 text-left">
         <motion.img
           src={line}
           alt="How I work timeline"
@@ -39,7 +46,12 @@ const HowIWork = () => {
               <div
                 className={`absolute bg-white p-2 border border-zinc-200 rounded-full -translate-x-1/2 transform ${step.floatingPosition}`}
               >
-                <Icon className="text-secondary" size={20} />
+                <Icon
+                  className={
+                    !aiEnabled ? "text-zinc-800" : "text-fuchsia-500/60"
+                  }
+                  size={20}
+                />
               </div>
 
               <motion.div
@@ -79,6 +91,24 @@ const HowIWork = () => {
                       {step.description}
                     </p>
                   </div>
+
+                  {aiEnabled && step.aiDescription && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.35 }}
+                      className="flex items-start gap-2 mt-3 font-medium text-secondary text-xs"
+                    >
+                      <span className="text-sm">✨</span>
+
+                      <span>
+                        <span className="font-medium text-purple-600">
+                          AI Assist:
+                        </span>{" "}
+                        {step.aiDescription}
+                      </span>
+                    </motion.div>
+                  )}
 
                   <div className="clear-both" />
                 </div>

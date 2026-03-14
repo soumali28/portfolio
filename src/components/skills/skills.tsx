@@ -1,5 +1,5 @@
 import Section from "../section";
-import { skills } from "../../data/skills";
+import { skills } from "../../assets/data/skills";
 
 const Skills = () => {
   return (
@@ -15,7 +15,7 @@ const Skills = () => {
           return (
             <div
               key={index}
-              className="flex items-center gap-3 bg-white shadow-sm hover:shadow-md px-3 py-2 border border-neutral-200 rounded-full transition-all hover:-translate-y-1 duration-300 cursor-default"
+              className="flex items-center gap-3 bg-white shadow-sm hover:shadow-md px-3 py-2 border border-neutral-200 rounded-full transition-all duration-300 cursor-default"
             >
               <Icon size={18} color={skill.color} />
               <span className="font-medium text-secondary text-sm">
@@ -25,6 +25,7 @@ const Skills = () => {
           );
         })}
       </div>
+      
     </Section>
   );
 };

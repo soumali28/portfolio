@@ -59,7 +59,7 @@ const Section = ({
     >
       <motion.h2
         variants={itemVariants}
-        className="mb-3 font-heading font-semibold text-zinc-800 text-xl leading-tight"
+        className="mb-3 font-heading font-semibold text-zinc-800 text-2xl leading-tight"
       >
         {parts ? (
           <>

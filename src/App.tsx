@@ -6,6 +6,7 @@ import Work from "./components/work/work";
 import TopDesign from "./components/hero-section/top-design";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
+import Education from "./components/education/education";
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -45,9 +46,10 @@ function App() {
           <>
             <About />
             <Work />
-            <Projects />
             <Skills />
+            <Projects />
             <HowIWork />
+            <Education />
           </>
         )}
       </div>

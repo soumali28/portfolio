@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Section from "../section";
 import CompanyWorkCard from "./company-work-card";
-import { workExperience } from "../../data/work.data";
+import { workExperience } from "../../assets/data/work.data";
 
 const Work = () => {
   return (
