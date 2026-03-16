@@ -20,11 +20,9 @@ const Button = ({ children, onClick, className = "" }: ButtonProps) => {
         relative
         flex items-center gap-2
         px-6 py-3
-        rounded-lg
-        font-medium
         text-white
         text-sm
-        bg-zinc-800
+        bg-gradient-to-r from-purple-700/60 via-purple-500/80 to-fuchsia-600/60
         shadow-md
         hover:shadow-lg
         transition-all

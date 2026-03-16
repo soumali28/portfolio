@@ -7,6 +7,8 @@ import TopDesign from "./components/hero-section/top-design";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
 import Education from "./components/education/education";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -50,9 +52,12 @@ function App() {
             <Projects />
             <HowIWork />
             <Education />
+
+            <Footer />
           </>
         )}
       </div>
+      {hasScrolled && <Navbar />}
     </>
   );
 }

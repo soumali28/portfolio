@@ -46,7 +46,13 @@ const HeaderText = ({ showText }: { showText: boolean }) => {
         <span className="opacity-80 font-accent text-xl italic">
           (lovingly)
         </span>
-        . I yap a lot but coffee helps
+        . I yap a lot but coffee helps. I don't just prototype idea — I turn
+        them into
+        <span className="font-medium text-zinc-800">
+          {" "}
+          actual shipped products
+        </span>
+        .
       </motion.p>
     </motion.div>
   );

@@ -20,7 +20,7 @@ const Projects = () => {
   );
 
   const Media = ({ src }: { src: string }) => (
-    <div className="mb-3 border border-neutral-200 rounded-md overflow-hidden">
+    <div className="mb-3 border border-neutral-200 rounded-md group-hover:rounded-2xl overflow-hidden transition-all duration-300">
       <video
         src={src}
         autoPlay
@@ -33,7 +33,12 @@ const Projects = () => {
   );
 
   return (
-    <Section title="What I've Built" highlight="Built" showDivider={false} className="mt-16 text-center">
+    <Section
+      title="What I've Built"
+      highlight="Built"
+      showDivider={false}
+      className="mt-16 text-center"
+    >
       <div className="gap-3 grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] my-8 text-left">
         {projects.map((project, index) => (
           <motion.div
@@ -41,7 +46,6 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: index * 0.08 }}
-            whileHover={{ y: -3 }}
             onClick={() => handleOpen(project.link)}
             className={`
               ${project.span}
@@ -53,17 +57,16 @@ const Projects = () => {
               justify-between
               cursor-pointer
               transition-all duration-300
-              hover:border-neutral-300
+              hover:border-neutral-400/70
               hover:shadow-sm
+              hover:rounded-3xl
               overflow-hidden
               group
             `}
           >
             {/* Optional media preview */}
             <div>
-              {project.media && (
-                <Media src={project.media} />
-              )}
+              {project.media && <Media src={project.media} />}
               {/* Header */}
 
               <div className="flex justify-between items-start gap-2">

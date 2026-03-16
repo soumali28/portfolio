@@ -9,7 +9,7 @@ const Education = () => {
       title="Education"
       highlight="Education"
       showDivider={false}
-      className="mt-48"
+      className="mt-50"
     >
       <div className="space-y-4 mx-auto w-full">
         {educationData.map((edu, index) => (
