@@ -10,7 +10,9 @@ const Header = ({ hasScrolled }: { hasScrolled: boolean }) => {
     <motion.div
       layout
       transition={{ duration: 1.2, ease: "easeInOut" }}
-      className={`relative flex flex-col-reverse md:flex-row  items-center gap-14      ${!hasScrolled ? "min-h-[90vh] md:min-h-screen" : "mt-16 md:mt-20"}`}
+      className={`relative flex flex-col-reverse md:flex-row  items-center gap-14 
+        ${!hasScrolled ? "min-h-[70vh] md:min-h-screen" : "mt-16 md:mt-20"}
+        `}
     >
       {/* Text */}
       <HeaderText showText={showText} />

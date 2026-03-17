@@ -124,7 +124,7 @@ const HeroImage: React.FC<HeroImageProps> = ({ onAnimationComplete }) => {
 
       <motion.div
         variants={imageVariants}
-       className="relative flex justify-center items-center w-56 sm:w-56 md:w-56 h-56 sm:h-56 md:h-56"
+        className="z-10 relative bg-[#f6f6f5] shadow-sm w-56 h-56 overflow-hidden will-change-transform"
         style={{
           transform: "translateZ(60px)", // creates depth vs glow
         }}

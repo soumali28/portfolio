@@ -19,7 +19,7 @@ export const projects = [
     tech: ["React", "Tailwind", "Shadcn-ui"],
     type: "freelance",
     link: "https://manjeetkaur-frontend.vercel.app/",
-    span: "sm:col-span-1 sm:row-span-1",
+    span: "col-span-2 row-span-1 sm:col-span-1 sm:row-span-1",
   },
   {
     title: "Granite & Grove Inc.",
@@ -47,7 +47,7 @@ export const projects = [
     type: "freelance",
     media: unf,
     link: "https://www.uhfindia.org/",
-    span: "col-span-1 row-span-2",
+    span: "col-span-2 row-span-2 sm:col-span-1 sm:row-span-2",
   },
 
   {

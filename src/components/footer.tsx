@@ -11,11 +11,11 @@ const Footer = () => {
   };
 
   return (
-    <Section className="mt-32" showDivider={false} title="">
-      <div className="mx-auto max-w-4xl">
+    <Section className="mt-16 sm:mt-32" showDivider={false} title="">
+      <div className="mx-auto sm:max-w-4xl">
 
         {/* Container */}
-        <div className="relative bg-gradient-to-b from-white to-neutral-100/90 p-10 border border-neutral-200 rounded-3xl">
+        <div className="relative bg-gradient-to-b from-white to-neutral-100/90 p-4 sm:p-10 border border-neutral-200 rounded-3xl">
 
           {/* Floating Label */}
           <div className="-top-4 left-1/2 absolute -translate-x-1/2">
@@ -25,12 +25,12 @@ const Footer = () => {
           </div>
 
           {/* Heading */}
-          <div className="mb-12 text-center">
-            <h2 className="font-semibold text-neutral-900 text-4xl">
+          <div className="my-6 text-center">
+            <h2 className="font-semibold text-neutral-900 text-2xl sm:text-4xl">
               Let’s work together
             </h2>
 
-            <p className="mx-auto mt-3 max-w-xl text-neutral-600">
+            <p className="mx-auto mt-3 max-w-xl text-neutral-600 text-sm sm:text-base">
               Building a product, startup, or platform? I'm always excited to
               collaborate on thoughtful ideas and meaningful products.
             </p>
@@ -42,7 +42,7 @@ const Footer = () => {
             {/* Email */}
             <motion.div
               whileHover={{ y: -4 }}
-              className="flex justify-between items-center bg-white shadow-sm p-5 border border-neutral-200 rounded-xl"
+              className="flex justify-between items-center bg-white shadow-xs p-3 border border-neutral-200 rounded-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="flex justify-center items-center bg-neutral-100 rounded-full w-10 h-10">
@@ -70,7 +70,7 @@ const Footer = () => {
             {/* Phone */}
             <motion.div
               whileHover={{ y: -4 }}
-              className="flex justify-between items-center bg-white shadow-sm p-5 border border-neutral-200 rounded-xl"
+              className="flex justify-between items-center bg-white shadow-xs p-3 border border-neutral-200 rounded-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="flex justify-center items-center bg-neutral-100 rounded-full w-10 h-10">

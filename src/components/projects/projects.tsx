@@ -19,8 +19,6 @@ const Projects = () => {
     skills.map((skill) => [skill.name.toLowerCase(), skill]),
   );
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
-
   const Media = ({ src }: { src: string }) => (
     <div className="mb-3 border border-neutral-200 rounded-md group-hover:rounded-2xl overflow-hidden transition-all duration-300">
       <video
