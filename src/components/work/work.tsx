@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Section from "../section";
 import CompanyWorkCard from "./company-work-card";

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { motion, type Variants } from "framer-motion";
 
 const containerVariants: Variants = {

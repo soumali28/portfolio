@@ -75,6 +75,7 @@ const Projects = () => {
                 </h3>
 
                 <span
+                // @ts-expect-error ignore this error
                   className={`text-[11px] px-2 py-1 rounded-full font-medium whitespace-nowrap ${badgeStyles[project.type]}`}
                 >
                   {project.type}

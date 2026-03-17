@@ -13,17 +13,17 @@ const links = [
   {
     label: "Github",
     icon: Github,
-    href: "https://github.com/",
+    href: "https://github.com/soumali28",
   },
   {
     label: "Linkedin",
     icon: FaLinkedin,
-    href: "https://linkedin.com/",
+    href: "https://www.linkedin.com/in/soumali-gorai",
   },
   {
     label: "Hashnode",
     icon: SiHashnode,
-    href: "https://hashnode.com/",
+    href: "https://hashnode.com/@soumali28",
   },
 ];
 
@@ -60,11 +60,13 @@ const Navbar = () => {
 
         {/* Hire Me Button */}
         <motion.a
-          href="mailto:your@email.com"
+          href="/contact"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Button className="shadow-md border rounded-full font-semibold">Hire Me</Button>
+          <Button className="shadow-md border rounded-full font-semibold">
+            Hire Me
+          </Button>
         </motion.a>
       </div>
     </div>
