@@ -9,6 +9,7 @@ import Skills from "./components/skills/skills";
 import Education from "./components/education/education";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Testimonials from "./components/testimonials/testimonials";
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -52,7 +53,7 @@ function App() {
             <Projects />
             <HowIWork />
             <Education />
-
+            <Testimonials />
             <Footer />
           </>
         )}

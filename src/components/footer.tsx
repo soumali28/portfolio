@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <Section className="mt-24" showDivider={false} title="">
+    <Section className="mt-32" showDivider={false} title="">
       <div className="mx-auto max-w-4xl">
 
         {/* Container */}
@@ -112,7 +112,7 @@ const Footer = () => {
 
             <motion.a
               whileHover={{ y: -2 }}
-              href={`https://wa.me/${phone}`}
+              href={`https://wa.me/${9153123364}`}
               target="_blank"
               className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg transition"
             >

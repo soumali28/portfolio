@@ -8,7 +8,7 @@ const EducationCard = ({ edu, index }: any) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.45, ease: "easeOut", delay: index * 0.1 }}
-      className="group relative bg-white shadow-sm hover:shadow-md p-6 border border-neutral-200 hover:border-neutral-300 rounded-2xl transition-all duration-300"
+      className="group relative bg-white shadow-sm p-6 border border-neutral-200 hover:border-neutral-300/80 rounded-3xl transition-all duration-300"
     >
 
       {/* Year Badge */}
