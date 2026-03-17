@@ -3,6 +3,8 @@ import { Github, Home } from "lucide-react";
 import { SiHashnode } from "react-icons/si";
 import Button from "./button/button";
 import { FaLinkedin } from "react-icons/fa";
+import logo from "../../public/logo.png";
+import { Link } from "react-router-dom";
 
 const links = [
   {
@@ -30,7 +32,11 @@ const links = [
 const Navbar = () => {
   return (
     <div className="bottom-6 left-1/2 z-50 fixed -translate-x-1/2">
-      <div className="flex items-center gap-2 sm:gap-4 bg-white/10 shadow-lg backdrop-blur-xl px-3 py-1 border border-white/30 rounded-full min-w-xs">
+      <div className="flex justify-between items-center gap-2 sm:gap-4 bg-white/10 shadow-lg backdrop-blur-xl px-3 py-1 border border-white/30 rounded-full min-w-xs">
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-8 h-8" />
+        </Link>
+        <div className="bg-zinc-300 mx-1 w-px h-6" />
         {links.map((link, i) => {
           const Icon = link.icon;
 
@@ -43,7 +49,7 @@ const Navbar = () => {
                 rel={link.href === "/" ? undefined : "noreferrer"}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="group relative flex justify-center items-center hover:bg-white border border-gray-200/40 rounded-full w-10 h-10 text-secondary"
+                className="group relative flex justify-center items-center hover:bg-white border border-gray-200/40 rounded-full w-6 sm:w-10 h-6 sm:h-10 text-secondary"
               >
                 <Icon size={20} />
 

@@ -102,9 +102,9 @@ const Footer = () => {
 
             <motion.a
               whileHover={{ y: -2 }}
-              href="https://cal.com"
+              href="/contact"
               target="_blank"
-              className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg transition"
+              className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
               <Coffee size={16} />
               Book a Chat
@@ -114,7 +114,7 @@ const Footer = () => {
               whileHover={{ y: -2 }}
               href={`https://wa.me/${9153123364}`}
               target="_blank"
-              className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg transition"
+              className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
               <MessageCircle size={16} />
               Text on WhatsApp

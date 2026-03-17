@@ -65,7 +65,7 @@ const CompanyWorkCard = ({
     >
       {/* Floating Magnetic Bubble */}
       {hovering && (
-        <div ref={bubbleRef} className="z-50 absolute pointer-events-none">
+        <div ref={bubbleRef} className="hidden sm:block z-50 absolute pointer-events-none">
           <div className="bg-white/10 shadow-[0_5px_15px_rgba(0,0,0,0.12)] backdrop-blur-md px-4 py-1.5 border border-white/20 rounded-full font-accent font-medium text-sm whitespace-nowrap transition-all duration-300">
             {expanded ? "Hide" : "See More"}
           </div>
