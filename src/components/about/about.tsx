@@ -2,7 +2,7 @@ import Section from "../section";
 
 const About = () => {
   return (
-    <Section title="A bit more about me" highlight="me">
+    <Section title="A bit more about me" highlight="me" className="sm:text-left text-center">
       <p className="text-zinc-700 leading-relaxed">
         I <span className="font-semibold text-zinc-800">build products</span>,
         not just features. I take{" "}

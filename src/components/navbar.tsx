@@ -30,7 +30,7 @@ const links = [
 const Navbar = () => {
   return (
     <div className="bottom-6 left-1/2 z-50 fixed -translate-x-1/2">
-      <div className="flex items-center gap-4 bg-white/10 shadow-lg backdrop-blur-xl px-3 py-1 border border-white/30 rounded-full">
+      <div className="flex items-center gap-2 sm:gap-4 bg-white/10 shadow-lg backdrop-blur-xl px-3 py-1 border border-white/30 rounded-full min-w-xs">
         {links.map((link, i) => {
           const Icon = link.icon;
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Button className="shadow-md border rounded-full font-semibold">Hire Me </Button>
+          <Button className="shadow-md border rounded-full font-semibold">Hire Me</Button>
         </motion.a>
       </div>
     </div>

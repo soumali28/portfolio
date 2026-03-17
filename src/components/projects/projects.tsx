@@ -19,6 +19,8 @@ const Projects = () => {
     skills.map((skill) => [skill.name.toLowerCase(), skill]),
   );
 
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
   const Media = ({ src }: { src: string }) => (
     <div className="mb-3 border border-neutral-200 rounded-md group-hover:rounded-2xl overflow-hidden transition-all duration-300">
       <video
@@ -48,7 +50,6 @@ const Projects = () => {
             transition={{ duration: 0.45, delay: index * 0.08 }}
             onClick={() => handleOpen(project.link)}
             className={`
-              ${project.span}
               relative rounded-xl
               border border-neutral-200
               bg-white
@@ -62,6 +63,7 @@ const Projects = () => {
               hover:rounded-3xl
               overflow-hidden
               group
+              ${project.span}
             `}
           >
             {/* Optional media preview */}
@@ -107,7 +109,7 @@ const Projects = () => {
 
             <FiArrowUpRight
               size={18}
-              className="right-3 bottom-3 absolute opacity-0 group-hover:opacity-100 text-neutral-500 transition-all translate-y-1 group-hover:translate-y-0 duration-200"
+              className="right-3 bottom-3 absolute opacity-100 sm:opacity-0 group-hover:opacity-100 text-neutral-500 transition-all translate-y-1 group-hover:translate-y-0 duration-200"
             />
           </motion.div>
         ))}

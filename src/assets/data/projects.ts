@@ -11,7 +11,7 @@ export const projects = [
     type: "personal",
     media: celestia,
     link: "https://github.com/SmritiSadhu/Celestia",
-    span: "col-span-2 row-span-2",
+    span: " col-span-2 row-span-2 sm:col-span-2 smrow-span-2",
   },
   {
     title: "Manjeet Kaur Organization",
@@ -19,7 +19,7 @@ export const projects = [
     tech: ["React", "Tailwind", "Shadcn-ui"],
     type: "freelance",
     link: "https://manjeetkaur-frontend.vercel.app/",
-    span: "col-span-1 row-span-1",
+    span: "sm:col-span-1 sm:row-span-1",
   },
   {
     title: "Granite & Grove Inc.",
@@ -28,7 +28,7 @@ export const projects = [
     type: "freelance",
     media: granite,
     link: "https://ggadvisors.ca",
-    span: "col-span-1 row-span-2",
+    span: "col-span-2 row-span-2 sm:col-span-1 sm:row-span-2",
   },
   {
     title: "Stock Price Prediction (ARIMA)",

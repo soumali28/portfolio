@@ -9,6 +9,7 @@ interface TestimonialCardProps{
   total: number;
 }
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ active, activeIndex, total }) => {
+  const isMobile = window.innerWidth < 668;
   const offset = ((activeIndex - (total - 1) / 2) / total) * 200;
   const tailOffset = 50 + (activeIndex - (total - 1) / 2) * 18;
 
@@ -22,11 +23,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ active, activeIndex, 
             opacity: 1,
             y: 0,
             scale: 1,
-            x: offset,
+            x: isMobile ? 0 : offset,
           }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ type: "spring", stiffness: 160, damping: 18 }}
-          className="relative bg-gradient-to-br from-white to-neutral-50 shadow-sm p-4 border border-neutral-200 rounded-3xl max-w-xl"
+          className="relative bg-gradient-to-br from-white to-neutral-50 shadow-sm p-4 border border-neutral-200 rounded-3xl max-w-md sm:max-w-xl"
         >
           {/* ❤️ floating badge */}
           <div className="-top-3 -right-3 absolute flex justify-center items-center bg-white shadow-xs border border-neutral-200 rounded-full w-8 h-8">
@@ -34,7 +35,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ active, activeIndex, 
           </div>
 
           {/* Quote */}
-          <p className="text-neutral-700 text-lg text-left leading-relaxed">
+          <p className="text-neutral-700 text-sm sm:text-lg text-left leading-relaxed">
             “{active.quote}”
           </p>
 

@@ -15,6 +15,7 @@ const TestimonialAvatars: React.FC<TestimonialAvatarProp> = ({
   setActive,
 }) => {
   const baseTilt = [-6, -2, 3, 6];
+  
   return (
     <div className="flex justify-center items-end mt-12">
       {testimonials.map((person, index) => {
@@ -45,7 +46,7 @@ const TestimonialAvatars: React.FC<TestimonialAvatarProp> = ({
               <img
                 src={person.avatar}
                 alt={person.name}
-                className="rounded-3xl w-32 h-32 object-cover"
+                className="rounded-3xl w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 object-cover"
               />
             </div>
             <p className="mt-2 font-accent font-medium text-secondary text-xl text-center">

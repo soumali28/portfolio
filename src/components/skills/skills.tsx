@@ -7,8 +7,9 @@ const Skills = () => {
       title="Skills"
       highlight="Skills"
       showDivider={false}
+      className="sm:text-left text-center"
     >
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-2">
         {skills.map((skill, index) => {
           const Icon = skill.icon;
 

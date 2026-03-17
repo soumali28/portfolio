@@ -10,8 +10,9 @@ const Work = () => {
       title="Where I Made an Impact"
       highlight="Impact"
       showDivider={false}
+      className="sm:text-left text-center"
     >
-      <div className="flex flex-col gap-4 mt-4">
+      <div className="flex flex-col gap-4 mt-4 text-left">
         {workExperience.map((work, index) => (
           <motion.div
             key={index}

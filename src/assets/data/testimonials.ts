@@ -4,6 +4,8 @@ import avatar1 from "../images/testimonials/testimonial1.png";
 import avatar2 from "../images/testimonials/testimonial2.jpg";
 import avatar3 from "../images/testimonials/testimonial3.jpg";
 import avatar4 from "../images/testimonials/testimonial4.png";
+import avatar5 from "../images/testimonials/testimonial5.jpg";
+
 
 export const testimonials = [
   {
@@ -27,6 +29,17 @@ export const testimonials = [
     caption: "Suvraneel",
     quote:
       "Soumali Gorai is a dedicated software developer, who consistently delivers reliable and high-quality work. She demonstrates strong problem-solving skills, collaboration, and a proactive learning attitude, making her a valuable addition to any team.",
+  },
+   {
+    id: 5,
+    name: "Aditi Pathak",
+    role: "Co-worker",
+    company: "Techstack Management - B2B SaaS",
+    location: "🇮🇳",
+    avatar: avatar5,
+    caption: "Aditi",
+    quote:
+      "Working with Soumali has been a truly rewarding experience. As a Front-End Developer, she consistently demonstrates exceptional technical expertise and a strong eye for detail. Her work is not only visually impressive but also highly efficient and user-centric.",
   },
   {
     id: 2,

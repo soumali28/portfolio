@@ -38,7 +38,7 @@ const Testimonials = () => {
       <p className="text-secondary">No cap, just real feedback.</p>
 
       <div
-        className="relative mx-auto my-12 max-w-4xl h-[420px]"
+        className="relative mx-auto my-12 sm:max-w-4xl h-[420px]"
         onMouseEnter={() => (isHovered.current = true)}
         onMouseLeave={() => (isHovered.current = false)}
       >

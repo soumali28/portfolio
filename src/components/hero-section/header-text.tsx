@@ -27,18 +27,18 @@ const HeaderText = ({ showText }: { showText: boolean }) => {
       variants={containerVariants}
       initial="hidden"
       animate={showText ? "show" : "hidden"}
-      className={`${showText ? "block max-w-md" : "hidden"}`}
+      className={`${showText ? "block max-w-md" : "hidden"}  max-w-full sm:max-w-md text-center md:text-left`}
     >
       <motion.h2
         variants={lineVariants}
-        className="mb-3 font-heading font-semibold text-zinc-800 text-5xl leading-tight"
+       className="mb-3 font-heading font-semibold text-zinc-800 text-3xl sm:text-4xl md:text-5xl leading-tight"
       >
         Hi, I’m <span className="inline-block relative">Soumali</span>
       </motion.h2>
 
       <motion.p
         variants={lineVariants}
-        className="text-secondary text-lg leading-relaxed"
+        className="text-secondary text-base sm:text-lg leading-relaxed"
       >
         I build{" "}
         <span className="font-medium text-zinc-800">useful software</span> and

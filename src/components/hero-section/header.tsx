@@ -10,7 +10,7 @@ const Header = ({ hasScrolled }: { hasScrolled: boolean }) => {
     <motion.div
       layout
       transition={{ duration: 1.2, ease: "easeInOut" }}
-      className={`relative flex items-center gap-14  ${!hasScrolled ? "min-h-screen" : "mt-20"}`}
+      className={`relative flex flex-col-reverse md:flex-row  items-center gap-14      ${!hasScrolled ? "min-h-[90vh] md:min-h-screen" : "mt-16 md:mt-20"}`}
     >
       {/* Text */}
       <HeaderText showText={showText} />
@@ -21,7 +21,11 @@ const Header = ({ hasScrolled }: { hasScrolled: boolean }) => {
       </motion.div>
 
       {/* Scroll indicator */}
-      {!hasScrolled && <ScrollIndicator />}
+      {!hasScrolled && (
+        <div className="hidden md:block">
+          <ScrollIndicator />
+        </div>
+      )}
     </motion.div>
   );
 };

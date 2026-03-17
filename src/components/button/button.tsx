@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 
 type ButtonProps = {
   children: ReactNode;
@@ -19,7 +18,8 @@ const Button = ({ children, onClick, className = "" }: ButtonProps) => {
         group
         relative
         flex items-center gap-2
-        px-6 py-3
+        p-2
+        sm:px-6 sm:py-3
         text-white
         text-sm
         bg-gradient-to-r from-purple-700/60 via-purple-500/80 to-fuchsia-600/60

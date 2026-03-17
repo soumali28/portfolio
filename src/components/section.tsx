@@ -80,7 +80,7 @@ const Section = ({
       </motion.div>
 
       {showDivider && (
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants} className="flex justify-center sm:justify-start">
           <Divider />
         </motion.div>
       )}
