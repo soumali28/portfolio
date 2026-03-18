@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface FloatingIconProps {
   src: string;
@@ -17,12 +18,41 @@ const FloatingIcon = ({
   label,
   autoShow = false,
 }: FloatingIconProps) => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  // detect mobile
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // close on outside click (mobile only)
+  useEffect(() => {
+    if (!isMobile) return;
+
+    const handleClick = () => setIsOpen(false);
+    window.addEventListener("click", handleClick);
+
+    return () => window.removeEventListener("click", handleClick);
+  }, [isMobile]);
+
+  const showTooltip = autoShow || isOpen;
+
   return (
     <motion.div
       className={`absolute z-30 cursor-pointer ${className}`}
       initial="rest"
-      animate={autoShow ? "hover" : "rest"}
-      whileHover="hover"
+      animate={showTooltip ? "hover" : "rest"}
+      whileHover={!isMobile ? "hover" : undefined}
+      onClick={(e) => {
+        if (!isMobile) return;
+        e.stopPropagation(); // prevent instant close
+        setIsOpen((prev) => !prev);
+      }}
     >
       {/* Tooltip */}
       <motion.div

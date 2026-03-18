@@ -106,7 +106,7 @@ const Footer = () => {
               target="_blank"
               className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
-              <Coffee size={16} />
+              <Coffee size={16} className="text-black"/>
               Book a Chat
             </motion.a>
 
@@ -116,7 +116,7 @@ const Footer = () => {
               target="_blank"
               className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
-              <MessageCircle size={16} />
+              <MessageCircle size={16} className="text-black"/>
               Text on WhatsApp
             </motion.a>
 
