@@ -96,7 +96,7 @@ const ContactForm = () => {
           placeholder="Your name"
           value={form.fullName}
           onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full placeholder:text-neutral-400 text-sm sm:text-base transition"
+          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full text-black placeholder:text-neutral-400 text-sm sm:text-base transition"
         />
 
         <input
@@ -104,7 +104,7 @@ const ContactForm = () => {
           placeholder="Work email"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full placeholder:text-neutral-400 text-sm sm:text-base transition"
+          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full text-black placeholder:text-neutral-400 text-sm sm:text-base transition"
         />
 
         <textarea
@@ -112,7 +112,7 @@ const ContactForm = () => {
           placeholder="Tell me what you're building..."
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full placeholder:text-neutral-400 text-sm sm:text-base transition resize-none"
+          className="bg-transparent py-3 border-neutral-300 focus:border-neutral-900 border-b focus:outline-none w-full text-black placeholder:text-neutral-400 text-sm sm:text-base transition resize-none"
         />
       </div>
 

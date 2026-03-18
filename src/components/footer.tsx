@@ -46,7 +46,7 @@ const Footer = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex justify-center items-center bg-neutral-100 rounded-full w-10 h-10">
-                  <Mail size={16} />
+                  <Mail size={16} className="text-black" color="black"/>
                 </div>
 
                 <div>
@@ -63,7 +63,7 @@ const Footer = () => {
                 onClick={() => copyToClipboard(email)}
                 className="hover:bg-neutral-100 p-2 rounded-md transition"
               >
-                <Copy size={16} />
+                <Copy size={16} className="text-black" color="black"/>
               </button>
             </motion.div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex justify-center items-center bg-neutral-100 rounded-full w-10 h-10">
-                  <Phone size={16} />
+                  <Phone size={16} className="text-black" color="black" />
                 </div>
 
                 <div>
@@ -91,7 +91,7 @@ const Footer = () => {
                 onClick={() => copyToClipboard(phone)}
                 className="hover:bg-neutral-100 p-2 rounded-md transition"
               >
-                <Copy size={16} />
+                <Copy size={16} className="text-black" color="black"/>
               </button>
             </motion.div>
 
@@ -106,7 +106,7 @@ const Footer = () => {
               target="_blank"
               className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
-              <Coffee size={16} className="text-black"/>
+              <Coffee size={16} className="text-black" color="black"/>
               Book a Chat
             </motion.a>
 
@@ -116,7 +116,7 @@ const Footer = () => {
               target="_blank"
               className="flex items-center gap-2 bg-white hover:bg-neutral-100 px-5 py-3 border border-neutral-200 rounded-lg text-black transition"
             >
-              <MessageCircle size={16} className="text-black"/>
+              <MessageCircle size={16} className="text-black" color="black"/>
               Text on WhatsApp
             </motion.a>
 

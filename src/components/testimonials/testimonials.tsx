@@ -8,7 +8,7 @@ import TestimonialAvatars from "./testimonial-avatar";
 const AUTOPLAY_DELAY = 4000;
 
 const Testimonials = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(2);
   const active = testimonials[activeIndex];
 
   //@ts-expect-error ignore this errror
@@ -31,7 +31,7 @@ const Testimonials = () => {
   return (
     <Section
       title="Hear It From The People I Build With"
-      highlight="Say"
+      highlight=" Build With"
       showDivider={false}
       className="mt-24 text-center"
     >

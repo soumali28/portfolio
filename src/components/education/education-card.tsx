@@ -26,7 +26,7 @@ const EducationCard: React.FC<EducationCardProps> = ({ edu, index }) => {
       className="group relative hover:bg-neutral-50/80 px-4 sm:px-6 py-5 sm:py-6 rounded-2xl transition-all duration-300"
     >
       {/* subtle divider */}
-      <div className="top-0 left-0 absolute bg-gradient-to-r from-transparent via-neutral-200 to-transparent w-full h-px" />
+      <div className="top-0 left-0 absolute bg-gradient-to-r from-transparent via-neutral-200 to-transparent shadow-neutral-100 shadow-xs w-full h-px" />
 
       <div className="flex items-start gap-4 sm:gap-5">
         
@@ -66,7 +66,7 @@ const EducationCard: React.FC<EducationCardProps> = ({ edu, index }) => {
           </p>
         </div>
       </div>
-        <div className="top-0 left-0 absolute bg-gradient-to-r from-transparent via-neutral-200 to-transparent w-full h-px" />
+        <div className="top-0 left-0 absolute bg-gradient-to-r from-transparent via-neutral-200 to-transparent shadow-neutral-100 shadow-xs w-full h-px" />
     </motion.div>
   );
 };

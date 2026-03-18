@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className="bottom-6 left-1/2 z-50 fixed -translate-x-1/2">
       <div className="flex justify-between items-center gap-2 sm:gap-4 bg-white/10 shadow-lg backdrop-blur-xl px-3 py-1 border border-white/30 rounded-full min-w-xs">
         <Link to="/">
-          <img src={logo} alt="logo" className="w-8 h-8" />
+          <img src={logo} alt="logo" className="w-10 h-10" />
         </Link>
         <div className="bg-zinc-300 mx-1 w-px h-6" />
         {links.map((link, i) => {

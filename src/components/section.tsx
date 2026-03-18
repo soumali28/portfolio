@@ -42,9 +42,7 @@ const Section = ({
   className,
 }: SectionProps) => {
   const parts =
-    highlight && title.includes(highlight)
-      ? title.split(highlight)
-      : null;
+    highlight && title.includes(highlight) ? title.split(highlight) : null;
 
   return (
     <motion.section
@@ -52,10 +50,7 @@ const Section = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-80px" }}
-      className={clsx(
-        "relative space-y-4 mx-auto my-12 max-w-3xl",
-        className
-      )}
+      className={clsx("relative space-y-4 mx-auto my-12 max-w-3xl", className)}
     >
       <motion.h2
         variants={itemVariants}
@@ -64,7 +59,10 @@ const Section = ({
         {parts ? (
           <>
             {parts[0]}
-            <span className="bg-clip-text bg-linear-to-b from-zinc-900 via-zinc-700 to-zinc-500 text-transparent">
+            <span 
+            // className="supports-[background-clip:text]:bg-clip-text supports-[background-clip:text]:bg-linear-to-b supports-[background-clip:text]:from-zinc-900 supports-[background-clip:text]:via-zinc-700 supports-[background-clip:text]:to-zinc-500 text-zinc-800 supports-[background-clip:text]:text-transparent"
+            className="text-zinc-800"
+            >
               {highlight}
             </span>
             {parts[1]}
@@ -80,7 +78,10 @@ const Section = ({
       </motion.div>
 
       {showDivider && (
-        <motion.div variants={itemVariants} className="flex justify-center sm:justify-start">
+        <motion.div
+          variants={itemVariants}
+          className="flex justify-center sm:justify-start"
+        >
           <Divider />
         </motion.div>
       )}
